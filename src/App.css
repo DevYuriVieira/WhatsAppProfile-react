@@ -1,0 +1,202 @@
+/* =========================
+   Geral / Desktop
+========================= */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* =========================
+   Profile Container
+========================= */
+.profile-container {
+  background-color: #121b22;
+  position: relative;
+}
+
+.profile-name {
+  position: absolute;
+  color: aliceblue;
+  background-color: #121b2279;
+  width: 90%;
+  padding: 1rem;
+  text-align: left;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.profile-container img {
+  width: 100%;
+  border-radius: 0%;
+  border: none;
+}
+
+.profile-actions {
+  border-top: 3px solid rgb(39, 39, 41);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.status-online {
+  height: 1rem;
+  width: 1rem;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.status-offline {
+  height: 1rem;
+  width: 1rem;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.status-action {
+  background-color: transparent;
+  font-size: x-large;
+}
+
+.online {
+  background-color: green;
+  border: 1px solid gray;
+}
+
+.invisible {
+  background-color: rgb(71, 71, 71);
+  border: 1px solid green;
+}
+
+.online:hover,
+.invisible:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* =========================
+   Icon Buttons
+========================= */
+.icon-btn {
+  background: transparent;
+  font-size: 50px;
+  border: none;
+  outline: none;
+  cursor: none !important; /* custom cursor */
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.07);
+  filter: drop-shadow(0 0 6px #25d366);
+}
+
+.icon-btn:active {
+  transform: scale(0.9);
+  filter: drop-shadow(0 0 12px #25d366);
+  opacity: 0.85;
+}
+
+/* =========================
+   Cursor Customizado
+========================= */
+* {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #25d366;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+}
+
+/* =========================
+   Responsividade Mobile
+========================= */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .profile-name {
+    font-size: 90%;
+    padding: 0.5rem;
+  }
+
+  .icon-btn {
+    font-size: 40px;
+  }
+
+  .status-action {
+    font-size: large;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
